@@ -1,6 +1,6 @@
 # Redfall
 
-![]()
+![](https://github.com/Ewillian/RedFall/blob/master/Image/tour.png?raw=true)
 
 
 
@@ -22,7 +22,7 @@
 
 ## Histoire
 
-
+​	Lorsqu'un [Dieu/Créature] des ténèbres arrive sur terre, cette dernière court à sa perte. Un combattant décide de vaincre le monstre des ténèbres en venant à bout de son terrible repère, un Donjon sous-terrain. Pour atteindre son objectif, notre personnage pourra compter sur l'aide de ses compagnons afin de faire face aux dangereuses créatures.   
 
 
 
@@ -30,9 +30,20 @@
 
 
 
+### Concept Art
+
+> Le donjon "Ballas" et la ville "Prométhée" vue du ciel
+
+![](https://github.com/Ewillian/RedFall/blob/master/Image/tour.png?raw=true)
+
+
+
 ## Outils
 
-
+- C#
+- Unity `version 2019.2.11f1`
+- Visual Studio Community
+- Maya
 
 
 
@@ -58,12 +69,6 @@
 
 - Guillaume Le Coq
 - Benoit Galmot
-
-
-
-**<u>Directrice artistique</u> **
-
-- Margaux Teyssier
 
 
 
