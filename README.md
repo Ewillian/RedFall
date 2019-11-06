@@ -10,7 +10,7 @@
 - Histoire
 - Visual
 - Outils
-- Membres du projet
+- Membres et rôles
 
 
 
