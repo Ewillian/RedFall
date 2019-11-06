@@ -1,12 +1,8 @@
 RedFall/Temp/
-RedFall/obj/
-Redfall/Library/assetDatabase3
-RedFall/Library/EditorInstance.json
-Redfall/Library/shadercompiler-UnityShaderCompiler.*.log
-RedFall/Library/EditorOnlyScriptingUserSettings.json
+
 RedFall/Library/ShaderCache/
-
-
+RedFall/Library/metadata/
+/Assets/AssetStoreTools*
 
 
 ### Unity ###
