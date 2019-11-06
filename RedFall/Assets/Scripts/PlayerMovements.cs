@@ -23,15 +23,15 @@ public class PlayerMovements : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            this.position.y += walkSpeed * Time.deltaTime;
+            this.position.y -= walkSpeed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.position.y += walkSpeed * Time.deltaTime;
+            this.position.x += walkSpeed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.position.y += walkSpeed * Time.deltaTime;
+            this.position.x -= walkSpeed * Time.deltaTime;
         }
 
         gameObject.transform.position = this.position;
