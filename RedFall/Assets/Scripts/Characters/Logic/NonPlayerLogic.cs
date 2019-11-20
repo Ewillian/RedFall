@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NonPlayerLogic : Character
 {
-    public NonPlayerLogic(string name)
+    public NonPlayerLogic(string name, Class npcClass)
     {
         this.Name = name;
+        this.Class = npcClass;
     }
 }

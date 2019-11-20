@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _this = new PlayerLogic(name: "Flo le boss");
+        _this = new PlayerLogic(name: "Flo le boss", playerClass: Class.Warrior);
     }
 
     // Update is called once per frame
