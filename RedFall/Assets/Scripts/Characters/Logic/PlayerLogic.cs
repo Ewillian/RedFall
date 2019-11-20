@@ -11,14 +11,11 @@ public class PlayerLogic : Character
         this.Name = name;
 
         this.team = new Team();
-        team.Add(this);
-        team.Add(new NonPlayerLogic("Pat"));
-        team.Add(new NonPlayerLogic("John"));
+        team.AddMember(this);
+        team.AddMember(new NonPlayerLogic("Pat"));
+        team.AddMember(new NonPlayerLogic("John"));
 
-        foreach (Character character in this.team)
-        {
-            Debug.Log(character.Name);
-        }
+        Debug.Log(team);
     }
     
 }
