@@ -6,7 +6,7 @@ public abstract class Character
 {
     public string Name { get; set; }
     public Class Class { get; set; }
-    public List<Equipment> Equipments {get; set; }
+    // public List<Equipment> equipments {get; set; }
 
     public int Health_points { get; set; }
     public int Energy_points { get; set; } // physic
