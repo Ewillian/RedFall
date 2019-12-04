@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class Team : List<Character>
 {
-    const int MAX_SIZES = 4;
+    private const int MAX_TEAM_SIZE = 4;
 
-    public void AddMember(Character character)
+    public bool AddMember(Character character)
     {
-        if (this.Count == MAX_SIZES)
+        if (this.Count == MAX_TEAM_SIZE)
         {
             Debug.Log("Max team capacity. Can't add " + character.Name);
+            return false;
         }
         else
         {
             this.Add(character);
+            return true;
         }
     }
 
     public override string ToString()
     {
         string value = "The team is composed of:\r\n";
-        foreach(Character character in this)
+        foreach (Character character in this)
         {
             value += " - " + character.ToString() + "\r\n";
         }
