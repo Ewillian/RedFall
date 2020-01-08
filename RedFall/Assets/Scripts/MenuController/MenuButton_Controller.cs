@@ -10,6 +10,9 @@ public class MenuButton_Controller : MonoBehaviour
     // Use this for initialization
     public int index;
     public int indexOption;
+    private int test;
+    private int test2;
+    private float inputAxisValue;
     public string newGameScene;
     public Button enterButton;
     [SerializeField] bool keyDown;
@@ -22,7 +25,6 @@ public class MenuButton_Controller : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-
         OptionMenu = (GameObject)GameObject.FindGameObjectsWithTag("OptionMenu").GetValue(0);
         Debug.Log(OptionMenu);
         //LoadMenu = (GameObject)GameObject.FindGameObjectsWithTag("LoadMenu").GetValue(0);
@@ -42,44 +44,58 @@ public class MenuButton_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.GetAxis("Vertical"));
-        if (Input.GetAxis("Vertical") != 0)
+        if(menuButtons[0].activeInHierarchy == true && OptionMenu.activeInHierarchy == false)
         {
-            if (!keyDown)
+            //int test = 0;
+            //if (test2 == 0)
+            //{
+            //    Input.ResetInputAxes();
+            //    test++;
+            //}
+            if (Input.GetAxis("Vertical") != 0)
             {
-                if (Input.GetAxis("Vertical") < 0)
+                if (!keyDown)
                 {
-                    if (index < maxIndex)
+                    if (Input.GetAxis("Vertical") < 0)
                     {
-                        index++;
+                        if (index < maxIndex)
+                        {
+                            index++;
+                        }
+                        else
+                        {
+                            index = 0;
+                        }
                     }
-                    else
+                    else if (Input.GetAxis("Vertical") > 0)
                     {
-                        index = 0;
+                        if (index > 0)
+                        {
+                            index--;
+                        }
+                        else
+                        {
+                            index = maxIndex;
+                        }
                     }
+                    keyDown = true;
                 }
-                else if (Input.GetAxis("Vertical") > 0)
-                {
-                    if (index > 0)
-                    {
-                        index--;
-                    }
-                    else
-                    {
-                        index = maxIndex;
-                    }
-                }
-                keyDown = true;
             }
-        }
-        else
-        {
-            keyDown = false;
+            else
+            {
+                keyDown = false;
+            }
         }
 
         if (menuButtons[0].activeInHierarchy == false && OptionMenu.activeInHierarchy == true)
         {
-            Debug.Log("OptionMovement");
+            //int test2 = 0;
+            //if (test == 0)
+            //{
+            //    Input.ResetInputAxes();
+            //    test++;
+            //}
+            Input.ResetInputAxes();
             if (Input.GetAxis("Vertical") != 0)
             {
                 Debug.Log("OptionMovement2");
