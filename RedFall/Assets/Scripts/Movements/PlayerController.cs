@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(collisionTimer);
             if (this.collisionTimer <= 0)
             {
-                SceneManager.LoadScene("Fight");
+                SceneManager.LoadScene("BattleScene");
             }
         }
     }
