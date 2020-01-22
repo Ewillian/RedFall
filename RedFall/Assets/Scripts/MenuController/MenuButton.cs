@@ -12,7 +12,7 @@ public class MenuButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if(menuButtonController.index == thisIndex)
+		if(menuButtonController.button_index == thisIndex)
 		{
 			animator.SetBool ("selected", true);
 			if(Input.GetAxis ("Submit") == 1){

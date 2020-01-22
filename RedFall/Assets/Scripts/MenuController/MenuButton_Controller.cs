@@ -8,74 +8,72 @@ using UnityEngine.UI;
 public class MenuButton_Controller : MonoBehaviour
 {
     // Use this for initialization
-    public int index;
-    public int indexOption;
-    private int test;
-    private int test2;
+    public int button_index;
     private float inputAxisValue;
     public string newGameScene;
     public Button enterButton;
+    public GameObject attachedTo;
     [SerializeField] bool keyDown;
     [SerializeField] int maxIndex;
     public AudioSource audioSource;
     private GameObject OptionMenu;
     //private GameObject LoadMenu;
-    private List<GameObject> menuButtons;
+    //private List<GameObject> menuButtons;
+    private GameObject MenuController;
+    private GameObject OptionController;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        OptionMenu = (GameObject)GameObject.FindGameObjectsWithTag("OptionMenu").GetValue(0);
-        Debug.Log(OptionMenu);
+        MenuController = (GameObject)GameObject.FindGameObjectsWithTag("MenuController").GetValue(0);
+        OptionController = (GameObject)GameObject.FindGameObjectsWithTag("MenuController").GetValue(1);
+        OptionController.SetActive(false);
         //LoadMenu = (GameObject)GameObject.FindGameObjectsWithTag("LoadMenu").GetValue(0);
-        OptionMenu.SetActive(false);
-        menuButtons = new List<GameObject>();
-        menuButtons.Add((GameObject)GameObject.FindGameObjectsWithTag("MainMenu").GetValue(0));
-        menuButtons.Add((GameObject)GameObject.FindGameObjectsWithTag("MainMenu").GetValue(1));
-        menuButtons.Add((GameObject)GameObject.FindGameObjectsWithTag("MainMenu").GetValue(2));
-        menuButtons.Add((GameObject)GameObject.FindGameObjectsWithTag("MainMenu").GetValue(3));
+        //menuButtons = new List<GameObject>();
+        //menuButtons.Add(attachedTo.transform.GetChild(0).gameObject);
+        //menuButtons.Add(attachedTo.transform.GetChild(1).gameObject);
+        //menuButtons.Add(attachedTo.transform.GetChild(2).gameObject);
+        //if (attachedTo.name == "MainMenu")
+        //{
+        //    menuButtons.Add(attachedTo.transform.GetChild(3).gameObject);
+        //}
 
-        foreach (GameObject item in menuButtons)
-        {
-            Debug.Log(item.name);
-        }
+        //foreach (GameObject item in menuButtons)
+        //{
+        //    Debug.Log(item.name);
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(menuButtons[0].activeInHierarchy == true && OptionMenu.activeInHierarchy == false)
+        if (attachedTo.activeInHierarchy == true)
         {
-            //int test = 0;
-            //if (test2 == 0)
-            //{
-            //    Input.ResetInputAxes();
-            //    test++;
-            //}
+            Debug.Log(button_index);
             if (Input.GetAxis("Vertical") != 0)
             {
                 if (!keyDown)
                 {
                     if (Input.GetAxis("Vertical") < 0)
                     {
-                        if (index < maxIndex)
+                        if (button_index < maxIndex)
                         {
-                            index++;
+                            button_index++;
                         }
                         else
                         {
-                            index = 0;
+                            button_index = 0;
                         }
                     }
                     else if (Input.GetAxis("Vertical") > 0)
                     {
-                        if (index > 0)
+                        if (button_index > 0)
                         {
-                            index--;
+                            button_index--;
                         }
                         else
                         {
-                            index = maxIndex;
+                            button_index = maxIndex;
                         }
                     }
                     keyDown = true;
@@ -85,92 +83,51 @@ public class MenuButton_Controller : MonoBehaviour
             {
                 keyDown = false;
             }
-        }
-
-        if (menuButtons[0].activeInHierarchy == false && OptionMenu.activeInHierarchy == true)
-        {
-            //int test2 = 0;
-            //if (test == 0)
-            //{
-            //    Input.ResetInputAxes();
-            //    test++;
-            //}
-            Input.ResetInputAxes();
-            if (Input.GetAxis("Vertical") != 0)
-            {
-                Debug.Log("OptionMovement2");
-                if (!keyDown)
-                {
-                    if (Input.GetAxis("Vertical") < 0)
-                    {
-                        if (indexOption < maxIndex)
-                        {
-                            indexOption++;
-                        }
-                        else
-                        {
-                            indexOption = 0;
-                        }
-                    }
-                    else if (Input.GetAxis("Vertical") > 0)
-                    {
-                        if (indexOption > 0)
-                        {
-                            indexOption--;
-                        }
-                        else
-                        {
-                            indexOption = maxIndex;
-                        }
-                    }
-                    keyDown = true;
-                }
-            }
-            else
-            {
-                keyDown = false;
-            }
+            Debug.Log(button_index);
         }
 
         //Nouvelle partie
-        if (Input.GetKeyDown(KeyCode.Return) && index == 0)
+        if (Input.GetKeyDown(KeyCode.Return) && button_index == 0 && attachedTo.name == "MainMenu" && attachedTo.activeInHierarchy == true)
         {
             SceneManager.LoadScene(1);
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && index == 1)
+        if (Input.GetKeyDown(KeyCode.Return) && button_index == 1 && attachedTo.name == "MainMenu" && attachedTo.activeInHierarchy == true)
         {
             Debug.Log("Menu Chargement");
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && index == 2)
+        if (Input.GetKeyDown(KeyCode.Return) && button_index == 2 && attachedTo.name == "MainMenu" && attachedTo.activeInHierarchy == true)
         {
-            ActivateOption();
+            MenuController.SetActive(false);
+            OptionController.SetActive(true);
+            button_index = 0;
         }
 
-        if (menuButtons[0].activeInHierarchy == false && Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && attachedTo.name == "OptionMenu" && attachedTo.activeInHierarchy == true)
         {
-            DesactivateOption();
+            MenuController.SetActive(true);
+            OptionController.SetActive(false);
+            button_index = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return) && attachedTo.name == "OptionMenu" && attachedTo.activeInHierarchy == true && button_index == 2)
+        {
+            MenuController.SetActive(true);
+            OptionController.SetActive(false);
+            button_index = 0;
         }
     }
 
     void ActivateOption()
     {
         Debug.Log("Menu Option");
-        OptionMenu.SetActive(true);
-        foreach (GameObject menuContent in menuButtons)
-        {
-            menuContent.SetActive(false);
-        }
+
     }
     void DesactivateOption()
     {
         Debug.Log("Menu Principal");
-        OptionMenu.SetActive(false);
-        foreach (GameObject menuContent in menuButtons)
-        {
-            menuContent.SetActive(true);
-        }
+
     }
 
     void ActivateLoad()
