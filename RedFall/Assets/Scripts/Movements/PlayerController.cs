@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
 
     private Animator anim;
-
+    private bool playerSprinting;
     private bool playerMoving;
     private Vector2 lastMove;
 
@@ -22,8 +22,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         playerMoving = false;
+        playerSprinting = false;
 
-        if(playerMoving != true) { 
+        if (playerMoving != true) { 
         // Déplacements horizontaux
             if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
             {
@@ -44,7 +45,23 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+        //Déplacements sprint
+        if (Input.GetKeyDown(KeyCode.LeftShift)) 
+        {
+            playerSprinting = true;
+            anim.SetBool("PlayerSprinting", playerSprinting);
+            moveSpeed *= 3;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            playerSprinting = false;
+            anim.SetBool("PlayerSprinting", playerSprinting);
+            moveSpeed /= 3;
+        }
+
+
+
+            anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         anim.SetBool("PlayerMoving", playerMoving);
 
