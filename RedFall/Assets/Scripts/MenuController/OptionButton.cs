@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OptionButton : MonoBehaviour
 {
-    [SerializeField] MenuButton_Controller menuButtonController;
+    [SerializeField] MenuOptionController menuOptionController;
     [SerializeField] Animator animator;
     [SerializeField] AnimatorFunctions animatorFunctions;
     [SerializeField] int thisOptionIndex;
@@ -12,7 +12,7 @@ public class OptionButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (menuButtonController.button_index == thisOptionIndex)
+        if (menuOptionController.button_index == thisOptionIndex)
         {
             animator.SetBool("selected", true);
             if (Input.GetAxis("Submit") == 1)

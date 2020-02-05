@@ -5,11 +5,10 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuButton_Controller : MonoBehaviour
+public class MenuOptionController : MonoBehaviour
 {
     // Use this for initialization
     public int button_index;
-    private float inputAxisValue;
     public string newGameScene;
     public Button enterButton;
     public GameObject attachedTo;
@@ -25,9 +24,8 @@ public class MenuButton_Controller : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        MenuController = (GameObject)GameObject.FindGameObjectsWithTag("MenuController").GetValue(0);
-        OptionController = (GameObject)GameObject.FindGameObjectsWithTag("MenuController").GetValue(1);
-        OptionController.SetActive(false);
+        MenuController = GameObject.FindGameObjectWithTag("MenuController");
+        OptionController = GameObject.FindGameObjectWithTag("MenuOption");
         //LoadMenu = (GameObject)GameObject.FindGameObjectsWithTag("LoadMenu").GetValue(0);
         //menuButtons = new List<GameObject>();
         //menuButtons.Add(attachedTo.transform.GetChild(0).gameObject);
@@ -86,21 +84,17 @@ public class MenuButton_Controller : MonoBehaviour
             Debug.Log(button_index);
         }
 
-        //Nouvelle partie
-        if (Input.GetKeyDown(KeyCode.Return) && button_index == 0 && attachedTo.name == "MainMenu" && attachedTo.activeInHierarchy == true)
+        if (Input.GetKeyDown(KeyCode.Escape) && attachedTo.name == "OptionMenu" && attachedTo.activeInHierarchy == true)
         {
-            SceneManager.LoadScene(1);
+            MenuController.SetActive(true);
+            OptionController.SetActive(false);
+            button_index = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && button_index == 1 && attachedTo.name == "MainMenu" && attachedTo.activeInHierarchy == true)
+        if (Input.GetKeyDown(KeyCode.Return) && attachedTo.name == "OptionMenu" && attachedTo.activeInHierarchy == true && button_index == 2)
         {
-            Debug.Log("Menu Chargement");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return) && button_index == 2 && attachedTo.name == "MainMenu" && attachedTo.activeInHierarchy == true)
-        {
-            MenuController.SetActive(false);
-            OptionController.SetActive(true);
+            MenuController.SetActive(true);
+            OptionController.SetActive(false);
             button_index = 0;
         }
     }
@@ -131,3 +125,4 @@ public class MenuButton_Controller : MonoBehaviour
         Application.Quit();
     }
 }
+
