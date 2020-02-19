@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {   
@@ -11,11 +12,16 @@ public class PlayerController : MonoBehaviour
     private bool playerSprinting;
     private bool playerMoving;
     private Vector2 lastMove;
+    private SkillController skillController;
+
+    public float waitTime = 3;
+    WaitForSecondsRealtime waitForSecondsRealtime;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        skillController = this.GetComponent<SkillController>();
     }
 
     // Update is called once per frame
@@ -23,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         playerMoving = false;
         playerSprinting = false;
+        skillController.useSkill();
 
         if (playerMoving != true) { 
         // Déplacements horizontaux
@@ -52,8 +59,10 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("PlayerSprinting", playerSprinting);
             moveSpeed *= 3;
         }
+
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
+            playerMoving = false;
             playerSprinting = false;
             anim.SetBool("PlayerSprinting", playerSprinting);
             moveSpeed /= 3;
@@ -61,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-            anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         anim.SetBool("PlayerMoving", playerMoving);
 
@@ -75,9 +84,24 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("MoveY", 0);
         }
 
-        if(anim.GetFloat("MoveX") == -1 && anim.GetFloat("MoveY") == -1)
+        if (anim.GetFloat("MoveX") == -1 && anim.GetFloat("MoveY") == -1)
         {
             anim.SetFloat("MoveY", 0);
+
         }
     }
+    //Collisions
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            this.GetComponent<Animator>().SetBool("PlayerMoving", false);
+            this.GetComponent<Animator>().SetBool("Fighting", true);
+            this.GetComponent<Animator>().SetBool("activeSkill1", true);
+            this.GetComponent<Animator>().SetBool("PlayerSprinting", false);
+            this.moveSpeed = 0;
+            //attendre puis lancer la scene
+        }
+    }
+
 }
