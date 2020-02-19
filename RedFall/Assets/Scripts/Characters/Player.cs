@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
                 position.x -= walkSpeed * Time.deltaTime;
             }
         }
-        
+
         return position;
     }
 }
