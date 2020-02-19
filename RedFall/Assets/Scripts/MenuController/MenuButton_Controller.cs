@@ -9,9 +9,8 @@ public class MenuButton_Controller : MonoBehaviour
 {
     // Use this for initialization
     public int button_index;
-    private float inputAxisValue;
+    public GameObject target;
     public string newGameScene;
-    public Button enterButton;
     public GameObject attachedTo;
     [SerializeField] bool keyDown;
     [SerializeField] int maxIndex;
@@ -25,8 +24,8 @@ public class MenuButton_Controller : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        MenuController = (GameObject)GameObject.FindGameObjectsWithTag("MenuController").GetValue(0);
-        OptionController = (GameObject)GameObject.FindGameObjectsWithTag("MenuController").GetValue(1);
+        MenuController = attachedTo;
+        OptionController = target;
         OptionController.SetActive(false);
         //LoadMenu = (GameObject)GameObject.FindGameObjectsWithTag("LoadMenu").GetValue(0);
         //menuButtons = new List<GameObject>();

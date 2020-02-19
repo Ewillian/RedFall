@@ -766,7 +766,7 @@ MonoBehaviour:
   menuOptionController: {fileID: 1709517566}
   animator: {fileID: 956489630}
   animatorFunctions: {fileID: 956489629}
-  thisOptionIndex: 0
+  thisOptionIndex: 2
 --- !u!1001 &1015194217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   menuOptionController: {fileID: 1709517566}
   animator: {fileID: 1057323073}
   animatorFunctions: {fileID: 1057323072}
-  thisOptionIndex: 0
+  thisOptionIndex: 1
 --- !u!114 &1057323075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1394,6 +1394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button_index: 0
+  target: {fileID: 1709517564}
   newGameScene: 
   enterButton: {fileID: 0}
   attachedTo: {fileID: 1560838879}
@@ -1678,7 +1679,7 @@ GameObject:
   - component: {fileID: 1709517566}
   m_Layer: 0
   m_Name: OptionMenu
-  m_TagString: MenuController
+  m_TagString: MenuOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1715,6 +1716,7 @@ MonoBehaviour:
   button_index: 0
   newGameScene: 
   enterButton: {fileID: 0}
+  target: {fileID: 1560838879}
   attachedTo: {fileID: 1709517564}
   keyDown: 0
   maxIndex: 2
