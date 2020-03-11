@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
-{   
+{
     // Vitesse de déplacement
     public float moveSpeed;
 
@@ -13,9 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool playerMoving;
     private Vector2 lastMove;
     private SkillController skillController;
-
-    public float waitTime = 3;
-    WaitForSecondsRealtime waitForSecondsRealtime;
+    private float collisionTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +29,10 @@ public class PlayerController : MonoBehaviour
         playerSprinting = false;
         skillController.useSkill();
 
-        if (playerMoving != true) { 
-        // Déplacements horizontaux
-            if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
+        if (playerMoving != true)
+        {
+            // Déplacements horizontaux
+            if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
             {
                 transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
                 playerMoving = true;
@@ -53,7 +52,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Déplacements sprint
-        if (Input.GetKeyDown(KeyCode.LeftShift)) 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             playerSprinting = true;
             anim.SetBool("PlayerSprinting", playerSprinting);
@@ -79,7 +78,7 @@ public class PlayerController : MonoBehaviour
 
 
         //Corriger les déplacements quand on appuie sur deux touches à la fois
-        if(anim.GetFloat("MoveX") == 1 && anim.GetFloat("MoveY") == -1)
+        if (anim.GetFloat("MoveX") == 1 && anim.GetFloat("MoveY") == -1)
         {
             anim.SetFloat("MoveY", 0);
         }
@@ -88,6 +87,16 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetFloat("MoveY", 0);
 
+        }
+
+        if (this.collisionTimer > 0)
+        {
+            collisionTimer -= Time.deltaTime;
+            Debug.Log(collisionTimer);
+            if (this.collisionTimer <= 0)
+            {
+                SceneManager.LoadScene("Fight");
+            }
         }
     }
     //Collisions
@@ -101,6 +110,12 @@ public class PlayerController : MonoBehaviour
             this.GetComponent<Animator>().SetBool("PlayerSprinting", false);
             this.moveSpeed = 0;
             //attendre puis lancer la scene
+            this.collisionTimer = 1.25f;
+            if (col.gameObject.name == "Slime")
+            {
+                Debug.Log("Le monstre est de type Slime");
+
+            }
         }
     }
 

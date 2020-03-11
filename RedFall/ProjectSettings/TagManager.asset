@@ -6,6 +6,11 @@ TagManager:
   tags:
   - TownPanel
   - selectBuilding
+  - MenuController
+  - MenuOption
+  - OptionMenu
+  - MainMenu
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -42,4 +47,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3951699279
+    locked: 0
+  - name: Items
+    uniqueID: 39100797
+    locked: 0
+  - name: Tree_Bottom
+    uniqueID: 434915547
+    locked: 0
+  - name: Npc
+    uniqueID: 1520608083
+    locked: 0
+  - name: Player
+    uniqueID: 962636417
+    locked: 0
+  - name: Tree_Top
+    uniqueID: 2984148529
     locked: 0
