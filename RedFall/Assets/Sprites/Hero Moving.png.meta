@@ -1,0 +1,1207 @@
+fileFormatVersion: 2
+guid: 900c67919a82b7c4b991be05962aa59c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2977952666439198464
+    second: Hero Moving_0
+  - first:
+      213: 1501416820317791463
+    second: Hero Moving_1
+  - first:
+      213: 3555337562680096874
+    second: Hero Moving_2
+  - first:
+      213: 5231137100437011136
+    second: Hero Moving_3
+  - first:
+      213: -7315763949313602777
+    second: Hero Moving_4
+  - first:
+      213: -5290474673005669205
+    second: Hero Moving_5
+  - first:
+      213: 4529794573820545215
+    second: Hero Moving_6
+  - first:
+      213: 4078840131887699726
+    second: Hero Moving_7
+  - first:
+      213: -4054465145354513490
+    second: Hero Moving_8
+  - first:
+      213: 682307886987931049
+    second: Hero Moving_9
+  - first:
+      213: -8046567335196900472
+    second: Hero Moving_10
+  - first:
+      213: -4563223959874598454
+    second: Hero Moving_11
+  - first:
+      213: 2559247776006174282
+    second: Hero Moving_12
+  - first:
+      213: -3674654463107698328
+    second: Hero Moving_13
+  - first:
+      213: 4251747162716857615
+    second: Hero Moving_14
+  - first:
+      213: 262197652132755747
+    second: Hero Moving_15
+  - first:
+      213: 6625403320986207402
+    second: Hero Moving_16
+  - first:
+      213: -6933827983368336418
+    second: Hero Moving_17
+  - first:
+      213: -6898897789959638178
+    second: Hero Moving_18
+  - first:
+      213: -5404122511715147630
+    second: Hero Moving_19
+  - first:
+      213: -609743959185223325
+    second: Hero Moving_20
+  - first:
+      213: -3034956063142871714
+    second: Hero Moving_21
+  - first:
+      213: 501413083644503225
+    second: Hero Moving_22
+  - first:
+      213: -6636510724448922269
+    second: Hero Moving_23
+  - first:
+      213: 1897284460479104892
+    second: Hero Moving_24
+  - first:
+      213: -2522071740082511762
+    second: Hero Moving_25
+  - first:
+      213: 9154113730466604725
+    second: Hero Moving_26
+  - first:
+      213: 6099014369968037341
+    second: Hero Moving_27
+  - first:
+      213: 421126150522451569
+    second: Hero Moving_28
+  - first:
+      213: 361351389946306570
+    second: Hero Moving_29
+  - first:
+      213: -6983372246813461941
+    second: Hero Moving_30
+  - first:
+      213: 1208645943085526314
+    second: Hero Moving_31
+  - first:
+      213: 3471678925096519169
+    second: Hero Moving_32
+  - first:
+      213: 6504784526030295723
+    second: Hero Moving_33
+  - first:
+      213: -6367502856465122449
+    second: Hero Moving_34
+  - first:
+      213: 2160329683598736934
+    second: Hero Moving_35
+  - first:
+      213: -5496263244867871655
+    second: Hero Moving_36
+  - first:
+      213: -5588814400481303688
+    second: Hero Moving_37
+  - first:
+      213: 4091003600257802310
+    second: Hero Moving_38
+  - first:
+      213: 7674187212970314087
+    second: Hero Moving_39
+  - first:
+      213: -7239777543832042880
+    second: Hero Moving_40
+  - first:
+      213: 8595274403945344959
+    second: Hero Moving_41
+  - first:
+      213: -7268238173578943104
+    second: Hero Moving_42
+  - first:
+      213: -6999495743781311874
+    second: Hero Moving_43
+  - first:
+      213: -2579136847674550823
+    second: Hero Moving_44
+  - first:
+      213: 7438742803572434205
+    second: Hero Moving_45
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hero Moving_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 263
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4450d3f1b3d4124c848887fa825e27b
+      internalID: -2977952666439198464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 263
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4787996dfebc7d5449bc4b85e7b294a7
+      internalID: 1501416820317791463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 263
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfb35209a36c814d8bec21395ae1697
+      internalID: 3555337562680096874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 263
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59732a19b15f8c4bab444988f34f2b5
+      internalID: 5231137100437011136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 206
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f377a93bc7fe2640b7fc72b6fb391a0
+      internalID: -7315763949313602777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 206
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40aee99e3ecfb2c41ae36e7ed7642510
+      internalID: -5290474673005669205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 205
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e943ffa7ce75d384d97620d3d3563e3b
+      internalID: 4529794573820545215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 205
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fae8dc8178e944b99d51bff7a1c5d1
+      internalID: 4078840131887699726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 151
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690c66ccce07a054ebd3ce4359023e1a
+      internalID: -4054465145354513490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_9
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 151
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20b3767587d7654282deb13a9309885
+      internalID: 682307886987931049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 151
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf01ea53faac5774d88957b82c372ad1
+      internalID: -8046567335196900472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_11
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 151
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca075dced452aa54982bc2a23ef626dd
+      internalID: -4563223959874598454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f6c367197a0b64eaa9eaa3c83a4fd0
+      internalID: 2559247776006174282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_13
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6bced00edee0d42bd2ac03f6d4be2e
+      internalID: -3674654463107698328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_14
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 263
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e59cf53d43199e4d9cbacbcd2d30732
+      internalID: 4251747162716857615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 263
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452bebf2695207645be0a2ccc6de26ac
+      internalID: 262197652132755747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 263
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2465623b286a343bcac3e01580e8a7
+      internalID: 6625403320986207402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 263
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9945a4713812ab42a69bbe3a4ca6f76
+      internalID: -6933827983368336418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_18
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 207
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0805272bc25be43af95e475d9a7973
+      internalID: -6898897789959638178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_19
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 207
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a28ace4baea86f42b8b8b1a1c014ce7
+      internalID: -5404122511715147630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_20
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 207
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fbd2e3d7ff8c5488a29a9fcfcb5cbc
+      internalID: -609743959185223325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_21
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 207
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4105470e18b67748853f49ad816b787
+      internalID: -3034956063142871714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_22
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 151
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61391b072fb043344b271c5b5d67bfab
+      internalID: 501413083644503225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_23
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 151
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69160b727b2b016419e21ad23ba0d842
+      internalID: -6636510724448922269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_24
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 152
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a357c6339df8a4bb1f13de02bcac2c
+      internalID: 1897284460479104892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_25
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 152
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de81998156138bf49addd0235ab4db0b
+      internalID: -2522071740082511762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_26
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 95
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a879a2a483503e44baff478644fb9a0
+      internalID: 9154113730466604725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 95
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb858236ba01506478dc83c5761f0928
+      internalID: 6099014369968037341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_28
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 95
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdef94db7d20dd4c981fdb38ad63603
+      internalID: 421126150522451569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_29
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 95
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6688d0b15ef764d8664f6d762f4df1
+      internalID: 361351389946306570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_30
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 263
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49851e4ad167a2c4aa490f759c28c45f
+      internalID: -6983372246813461941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_31
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 263
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6a52f86f9e6ad4bafd29b0a0a6ec62
+      internalID: 1208645943085526314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_32
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 263
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd2a421f59ae724c82af8ff83970f64
+      internalID: 3471678925096519169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_33
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 263
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc10ef003cfdb544298a5e4d0e83fb31
+      internalID: 6504784526030295723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_34
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 207
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c303751345ef6048a558833e70d24f8
+      internalID: -6367502856465122449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_35
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 207
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d536863d3986ba45be2b2e4f41794d9
+      internalID: 2160329683598736934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_36
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 207
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dbb45bdc143e442b8117991642bc83
+      internalID: -5496263244867871655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_37
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 207
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6e3619dba7bcc47945683b12de1e1a
+      internalID: -5588814400481303688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_38
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 152
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8d3624c275c0a46a6464d465321e75
+      internalID: 4091003600257802310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_39
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 152
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f43e77b2a6e864682706f47d05523b
+      internalID: 7674187212970314087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_40
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 152
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbe169729fa2da4b84a801c1bff3178
+      internalID: -7239777543832042880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_41
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 152
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d98bad2efaffe0408826d05d0d06186
+      internalID: 8595274403945344959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_42
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 94
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3577fc176e4ec44a6ea8a90ed6521e
+      internalID: -7268238173578943104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_43
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ab2dfbee726e144b3bca4d1f209f7c
+      internalID: -6999495743781311874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_44
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 94
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8a27a2e708f524d8ae95e728f976e7
+      internalID: -2579136847674550823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Moving_45
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 94
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c27e720946aae44bd504f9051c335a
+      internalID: 7438742803572434205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
