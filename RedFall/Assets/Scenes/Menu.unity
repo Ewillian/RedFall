@@ -1396,7 +1396,6 @@ MonoBehaviour:
   button_index: 0
   target: {fileID: 1709517564}
   newGameScene: 
-  enterButton: {fileID: 0}
   attachedTo: {fileID: 1560838879}
   keyDown: 0
   maxIndex: 3
@@ -1715,7 +1714,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button_index: 0
   newGameScene: 
-  enterButton: {fileID: 0}
   target: {fileID: 1560838879}
   attachedTo: {fileID: 1709517564}
   keyDown: 0

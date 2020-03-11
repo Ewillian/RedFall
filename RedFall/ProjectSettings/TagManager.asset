@@ -11,6 +11,23 @@ TagManager:
   - OptionMenu
   - MainMenu
   - Enemy
+  - desertTP
+  - grassTP
+  - EntranceTP
+  - 1stRoomRightTP
+  - Chest
+  - EntranceTP2
+  - 2ndRoomTP
+  - 3rdRoomTP
+  - 2ndRoomTP2
+  - Stairs
+  - IslandRoom
+  - 3rdRoomTP2
+  - IsleRoom
+  - BossTP
+  - 3rdRoomTP2-2
+  - Stairs2
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -51,6 +68,9 @@ TagManager:
   - name: Ground
     uniqueID: 3951699279
     locked: 0
+  - name: bottom_torch
+    uniqueID: 2752100729
+    locked: 0
   - name: Items
     uniqueID: 39100797
     locked: 0
@@ -62,6 +82,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 962636417
+    locked: 0
+  - name: top_torch
+    uniqueID: 698955377
     locked: 0
   - name: Tree_Top
     uniqueID: 2984148529

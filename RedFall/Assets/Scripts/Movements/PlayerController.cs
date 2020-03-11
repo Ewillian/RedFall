@@ -119,6 +119,20 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Le monstre est de type Slime");
 
             }
+        }else if (col.gameObject.tag == "Boss")
+        {
+            this.GetComponent<Animator>().SetBool("PlayerMoving", false);
+            this.GetComponent<Animator>().SetBool("Fighting", true);
+            this.GetComponent<Animator>().SetBool("activeSkill1", true);
+            this.GetComponent<Animator>().SetBool("PlayerSprinting", false);
+            this.moveSpeed = 0;
+            //attendre puis lancer la scene
+            this.collisionTimer = 1.25f;
+            if (col.gameObject.name == "BossDeLaMortQuiTue")
+            {
+                Debug.Log("Le monstre est de type Boss de la mort qui tue");
+
+            }
         }
     }
 
