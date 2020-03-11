@@ -4,8 +4,11 @@ using UnityEngine;
 
 public abstract class Character
 {
+    private const int INVENTORY_MAX_SIZE = 20;
+
     public string Name { get; set; }
     public Class Class { get; set; }
+    private List<Item> inventory { get; set; } = new List<Item>();
     // public List<Equipment> equipments {get; set; }
 
     public int Health_points { get; set; }
@@ -30,6 +33,36 @@ public abstract class Character
         int value = 5;
         // Calcule des dommages selon force, puissance, resistances, armure, ...
         return value;
+    }
+
+    public bool addItemToInventory(Item item)
+    {
+        if (this.inventory.Count < INVENTORY_MAX_SIZE)
+        {
+            this.inventory.Add(item);
+            return true;
+        }
+        return false;
+    }
+
+    public bool removeItemFromInventory(int index)
+    {
+        if (this.inventory.Count >= index - 1)
+        {
+            this.inventory.RemoveAt(index);
+            return true;
+        }
+        return false;
+    }
+
+    public bool removeItemFromInventory(Item itemToRemove)
+    {
+        return this.inventory.Remove(itemToRemove);
+    }
+
+    public List<Item> getInventory()
+    {
+        return this.inventory;
     }
 
     public override string ToString()
