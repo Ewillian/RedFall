@@ -14,6 +14,12 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMove;
     private SkillController skillController;
     private float collisionTimer = 0;
+    public int button_index;
+    [SerializeField] bool keyDown;
+    [SerializeField] int maxIndex;
+    public AudioSource audioSource;
+    public GameObject Controller;
+    public static bool game_is_paused = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +31,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(button_index);
         playerMoving = false;
         playerSprinting = false;
         skillController.useSkill();
+        pauseMenu();
 
         if (playerMoving != true)
         {
@@ -116,6 +124,79 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Le monstre est de type Slime");
 
             }
+        }
+    }
+
+    public void pauseMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (game_is_paused == true)
+            {
+                game_is_paused = false;
+                this.Controller.SetActive(false);
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                Time.timeScale = 0f;
+                this.Controller.SetActive(true);
+                game_is_paused = true;
+            }
+        }
+
+        if (this.Controller.activeInHierarchy == true)
+        {
+            Debug.Log(button_index);
+            if (Input.GetAxis("Vertical") != 0)
+            {
+                if (!keyDown)
+                {
+                    if (Input.GetAxis("Vertical") < 0)
+                    {
+                        if (button_index < maxIndex)
+                        {
+                            button_index++;
+                        }
+                        else
+                        {
+                            button_index = 0;
+                        }
+                    }
+                    else if (Input.GetAxis("Vertical") > 0)
+                    {
+                        if (button_index > 0)
+                        {
+                            button_index--;
+                        }
+                        else
+                        {
+                            button_index = maxIndex;
+                        }
+                    }
+                    keyDown = true;
+                }
+            }
+            else
+            {
+                keyDown = false;
+            }
+            Debug.Log(button_index);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return) && button_index == 0 && this.Controller.activeInHierarchy == true)
+        {
+            //Resume
+            this.Controller.SetActive(false);
+        }
+        else if (Input.GetKeyDown(KeyCode.Return) && button_index == 1 && this.Controller.activeInHierarchy == true)
+        {
+            //Option
+        }
+        else if (Input.GetKeyDown(KeyCode.Return) && button_index == 2 && this.Controller.activeInHierarchy == true)
+        {
+            //Leave
         }
     }
 

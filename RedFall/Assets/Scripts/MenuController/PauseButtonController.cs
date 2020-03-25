@@ -5,7 +5,6 @@ using UnityEngine;
 public class PauseButtonController : MonoBehaviour
 {
 
-    // Use this for initialization
     public int button_index;
     [SerializeField] bool keyDown;
     [SerializeField] int maxIndex;
@@ -13,22 +12,21 @@ public class PauseButtonController : MonoBehaviour
     public GameObject Controller;
     public static bool game_is_paused = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         //audioSource = GetComponent<AudioSource>();
         Controller.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+    public void pauseMenu ()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(game_is_paused == true)
+            if (game_is_paused == true)
             {
-
+                game_is_paused = false;
+                Controller.SetActive(false);
             }
             else
             {
@@ -50,9 +48,10 @@ public class PauseButtonController : MonoBehaviour
         {
             //Leave
         }
+    }
 
-
-
+    public void changeIndex()
+    {
         if (Controller.activeInHierarchy == true)
         {
             Debug.Log(button_index);
