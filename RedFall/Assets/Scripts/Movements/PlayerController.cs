@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMove;
     private SkillController skillController;
     private float collisionTimer = 0;
+    public static bool inventoryDisplayed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,8 @@ public class PlayerController : MonoBehaviour
         playerMoving = false;
         playerSprinting = false;
         skillController.useSkill();
+
+        inventoryMenu();
 
         if (playerMoving != true)
         {
@@ -115,6 +118,26 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("Le monstre est de type Slime");
 
+            }
+        }
+    }
+
+    public void inventoryMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("On a pressé M");
+            if (inventoryDisplayed)
+            {
+                Time.timeScale = 1f;
+                inventoryDisplayed = false;
+                SceneManager.UnloadSceneAsync("Inventory");
+            }
+            else
+            {
+                Time.timeScale = 0f;
+                inventoryDisplayed = true;
+                SceneManager.LoadScene("Inventory", LoadSceneMode.Additive);
             }
         }
     }
